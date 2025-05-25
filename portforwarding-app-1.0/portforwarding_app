@@ -232,7 +232,7 @@ class portforwarding:
         else:
             command = ['ssh','-p', '22','-N','-o','PasswordAuthentication=no','-o', 'BatchMode=true', '-o', 'ConnectTimeout=10', '-o', 'StrictHostKeyChecking=accept-new', '-o', 'UpdateHostKeys=yes']
 
-        command.extend(['-L', self.settings.get_string('remoteport')+':'+self.settings.get_string('ip')+':'+self.settings.get_string('localport'), self.settings.get_string('username')+'@'+self.settings.get_string('ip') ])
+        command.extend(['-L', self.settings.get_string('localport')+':'+self.settings.get_string('ip')+':'+self.settings.get_string('remoteport'), self.settings.get_string('username')+'@'+self.settings.get_string('ip') ])
 
         return command
 
