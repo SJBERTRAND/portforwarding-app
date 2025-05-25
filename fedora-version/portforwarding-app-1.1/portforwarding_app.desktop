@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Icon=portforwarding-app
+Name=PortForwarding App
+Comment=PortForwarding App
+Categories=Utilities
+Exec=portforwarding_app
+StartupNotify=True
+Terminal=False
